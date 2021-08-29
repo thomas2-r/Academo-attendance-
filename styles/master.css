@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    position: absolute;
+    color: #181818;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+.navbar-nav li {
+    text-align: center;
+}
+.navbar-nav a {
+    margin-left: 15px;
+    font-weight: 700;
+    color: #5a58a6;
+    transition: all .5s ease;
+}
+
+.navbar-nav a:hover {
+    text-decoration: none;
+    /*color: #ff4a59;*/
+    border-bottom: 2px solid #00FF00;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+#banniere {
+    position: relative;
+    background: url('../images/bg1.png') center no-repeat;
+    background-size: cover;
+   height: 500px;
+
+}
+#banniere-filter {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(24,24,24,0.4);
+}
+#scroll-target {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.requiredspan:before {
+    content: "*";
+    color: red;
+}
+.requiredspan {
+    color: red;
+}
+.requiredlabel:after {
+    content: "*";
+    color: red;
+}
+.requiredtime:after {
+    content: "*";
+    color: red;
+}
+.submitred {
+    background-color: red;
+    border: none;
+    color: white;
+}
+.submitorange {
+    background-color: orange;
+    border: none;
+    color: white;
+}
+select {
+    border: none;
+    width: 60px;
+    outline: none;
+}
+.section {
+    background: url('../images/bg2.jpg') center no-repeat;
+    height: 500px;
+    background-size: cover;
+    position: relative
+    padding: 30px;
+}
+.top1, .top2 {
+    height: 15px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    
+}
+.top1 { 
+    background-color: #ff5722;
+}
+.top2 {
+    background-color: #ff9800;
+}
+.forms {
+    background-color: #fff;
+    margin: 15px;
+    padding: 0 0 20px 0;
+    border-radius: 15px;
+    position: relative;
+}
+.body h3, body p {
+    margin-top: 20px;
+}
+.body h3 {
+    font-weight: 400;
+}
+
+button {
+    padding: 6px;
+    margin-left: 15px;
+    border-radius: 5px;
+    width: 120px;
+    color: #fff;
+    border: 0;
+    font-weight: bold;
+}
+
+
+/*input[type=time]::-webkit-datetime-edit-text {
+    padding: 30px 10px;
+}
+*/
+
+.fa-search {
+    padding-top: 10px;
+}
+#copyright {
+    text-align: center;
+    font-size: .9em;
+    margin-top: 10px;
+    
+}

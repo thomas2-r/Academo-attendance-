@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Academo Online Attendance (AOA)</title>
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/master.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<div class="container-fluid">
+			<a href="#" class="navbar-brand"><img src="images/academo_log.png" alt="No Academo_logo" width="150" height="50"></a>
+			
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+			<div class="collapse navbar-collapse" id="navbarMenu">
+			    <ul class="navbar-nav ml-auto">
+				      <li class="nav-item">
+				        <a class="nav-link" href="#">Home</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#">AboutUs</a>
+				      </li>
+				      
+				      <li class="nav-item">
+				        <a class="nav-link" href="#">Vision</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#">ContactUs</a>
+			      	</li>
+			       	<li class="nav-item">
+			       		<a href="#" class="navbar-link"><i class="fa fa-fw fa-search"></i></a>
+			       	</li>
+			    </ul>
+			</div>
+		</div>
+	</nav>
+	<div id="banniere" >
+        <div id="banniere-filter">
+            <p id="scroll-target">
+                <a href="#scroll" class="btn btn-default btn-sm"><i class="fa fa-chevron-down fa-3x"></i></a>   
+            </p>  
+        </div>
+        
+    </div>
+	<section class="section" id="scroll">
+		<div class="container ">
+			<div class="row">
+				<form class="form1 col-lg-6 col-xl-6 col-md-6">
+					<div class="row forms">
+						<div class="col-xs-12 col-sm-12">
+							<div class="top1"></div>
+							<div class="body">
+								<h3>TIME IN</h3>
+								<P>Attendance login</P>
+								<span class="requiredspan">Required</span>
+							</div>
+						</div>
+					</div>
+					<div class="row forms">
+						<div class="col-xs-12 col-sm-12">
+							<div class="body">
+								<label for="name" class="requiredlabel">Name</label> <br>
+								<input type="text" placeholder="Your answer" id="name" required>
+							</div>
+						</div>
+					</div>
+					<div class="row forms">
+						<div class="col-xs-12 col-sm-12">
+							<div class="body">
+								<h5 class="requiredtime">Time In</h5>
+								<label for="time_in">Time</label> <br>
+								<input type=time min=06:00 max=22:00 name="time_in" id="time_in" required>
+                                <select name="GMT" id="GMT">
+                                    <option value="AM">AM</option>
+                                    <option value="PM">PM</option>
+                                </select>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12">
+						<input class="submitred" type="submit" name="Submit">
+					</div>
+				</form>
+				<form class="form2 col-lg-6 col-xl-6 col-md-6">
+					<div class="row forms">
+						<div class="col-xs-12 col-sm-12">
+							<div class="top2"></div>
+							<div class="body">
+								<h3>TIME OUT</h3>
+								<p>Attendance login</p>
+								<span class="requiredspan">Required</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="row forms">
+						<div class="col-xs-12 col-sm-12">
+							<div class="body">
+								<label for="name" class="requiredlabel">Name</label> <br>
+								<input type="text" placeholder="Your answer" id="name" required>
+							</div>
+						</div>
+					</div>
+
+					<div class="row forms">
+						<div class="col-xs-12 col-sm-12">
+							<div class="body">
+								<h5 class="requiredtime">Time Out</h5>
+								<label for="time_out" class="">Time</label><br>
+							  	<input type=time min=06:00 max=22:00 name="time_out" id="time_out" required>
+                                <select name="GMT" id="GMT">
+                                    <option value="AM">AM</option>
+                                    <option value="PM">PM</option>
+                                </select>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12">
+						<input class="submitorange" type="submit" name="Submit">
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p id="copyright">&copy; 2021 Academo Inc. All rights reserved.</p>
+	</footer>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
